@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muscle</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI',
+          'Ubuntu', 'Droid Sans', sans-serif, 'Meiryo';
+        padding: 0 12px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-bottom: 24px;
+      }
+      table > thead > tr > th,
+      table > tbody > tr > td {
+        padding: 5px 10px;
+      }
+      table > thead > tr > th {
+        text-align: left;
+        border-bottom: 1px solid;
+      }
+      table > tbody > tr + tr > td {
+        border-top: 1px solid;
+      }
+
+      .tooltip {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .tooltip img {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        max-width: none !important;
+        max-height: none !important;
+        height: auto;
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 5px;
+        z-index: 10;
+      }
+      .tooltip:hover img {
+        display: block;
+      }
+
+      .blurred {
+        filter: blur(3px);
+        transition: filter 0.3s ease;
+      }
+
+      /* Make cursor pointer for clickable cells and li */
+      table td:not(:first-child),
+      table td li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 24px; font-weight: bold">
+      Anterior Prevertebral Muscles<br /><br />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Muscle</th>
+          <th>Origin</th>
+          <th>Insertion</th>
+          <th>Innervation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Longus colli</strong>
+              <img
+                src="../muscle/prevertebral/longus_colli.png"
+                alt="Longus colli"
+              />
+            </span>
+          </td>
+          <td>
+            <li>Bodies of C5–T3</li>
+            <li>Transverse process of C3-C5</li>
+          </td>
+          <td>
+            <li>Anterior tubercle of C1</li>
+            <li>Bodies of C2–C4</li>
+            <li>Transverse processes of C3–C6</li>
+          </td>
+          <td>Anterior rami of C2–C6.</td>
+          <td>
+            <li>Bilaterally: Flexion of the neck</li>
+            <li>Unilaterally: Rotation to the opposite side</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Longus capitis</strong>
+              <img
+                src="../muscle/prevertebral/longus_capitis.png"
+                alt="Longus capitis"
+              />
+            </span>
+          </td>
+          <td>Anterior tubercles of transverse processes of C3–C6.</td>
+          <td>Basilar part of occipital bone.</td>
+          <td>Anterior rami of C1–C3.</td>
+          <td>Flexes the head at the atlanto-occipital joint.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Rectus capitis anterior</strong>
+              <img
+                src="../muscle/prevertebral/rectus_capitis_anterior.png"
+                alt="Rectus capitis anterior"
+              />
+            </span>
+          </td>
+          <td>Anterior surface of the lateral mass of the atlas (C1).</td>
+          <td>Base of cranium anterior to the occipital condyles.</td>
+          <td>Branches from the loop between C1 and C2. spinal nerves</td>
+          <td>Flexes the head at the atlanto-occipital joint.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Anterior Scalene</strong>
+              <img
+                src="../muscle/prevertebral/anterior_scalene.png"
+                alt="Anterior Scalene"
+              />
+            </span>
+          </td>
+          <td>Anterior tubercles of transverse processes of C3–C6.</td>
+          <td>1st rib.</td>
+          <td>Anterior rami of spinal nerve C4–C6.</td>
+          <td>
+            <li>Elevates the 1st rib</li>
+            <li>Flexion of the neck bilaterally contraction</li>
+            <li>Laterally flexes the neck unilaterally</li>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="text-align: center; font-size: 24px; font-weight: bold">
+      Lateral Prevertebral Muscles<br /><br />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Muscle</th>
+          <th>Origin</th>
+          <th>Insertion</th>
+          <th>Innervation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Rectus capitis lateralis</strong>
+              <img
+                src="../muscle/prevertebral/rectus_capitis_lateralis.png"
+                alt="Rectus capitis lateralis"
+              />
+            </span>
+          </td>
+          <td>Transverse process of the atlas (C1).</td>
+          <td>Jugular process of the occipital bone.</td>
+          <td>Branches from the loop between C1 and C2.</td>
+          <td>
+            Stabilizes and assists flexion of the atlanto-occipital joint.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Middle Scalene</strong>
+              <img
+                src="../muscle/prevertebral/middle_scalene.png"
+                alt="Middle Scalene"
+              />
+            </span>
+          </td>
+          <td>Posterior tubercles of transverse processes of C3–C7.</td>
+          <td>
+            <li>
+              Superior surface of the 1st rib (posterior to groove for
+              subclavian artery)
+            </li>
+          </td>
+          <td>Anterior rami of C3–C7 of spinal nerve.</td>
+          <td>
+            <li>Elevates the 1st rib during forced inspiration</li>
+            <li>Flexion of the neck via bilateral contraction</li>
+            <li>Laterally flexes neck unilaterally contraction</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Posterior Scalene</strong>
+              <img
+                src="../muscle/prevertebral/posterior_scalene.png"
+                alt="Posterior Scalene"
+              />
+            </span>
+          </td>
+          <td>Posterior tubercles of transverse processes of C5–C7.</td>
+          <td>External border of the 2nd rib.</td>
+          <td>Anterior rami of C7–C8.</td>
+          <td>
+            <li>Elevates the 2nd rib during forced inspiration</li>
+            <li>Flexion of the neck via bilateral contraction</li>
+            <li>Laterally flexes neck unilaterally contraction</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Levator scapulae</strong>
+              <img
+                src="../muscle/prevertebral/levator_scapulae.png"
+                alt="Levator scapulae"
+              />
+            </span>
+          </td>
+          <td>Posterior tubercles of transverse processes of C1–C4.</td>
+          <td>Superior part of the medial border of the scapula.</td>
+          <td>
+            <li>Anterior rami of C3–C4</li>
+            <li>Dorsal scapular nerve (C5)</li>
+          </td>
+          <td>
+            <li>Elevates the scapula</li>
+            <li>
+              Down rotation of the scapula (glenoid cavity tilts inferiorly)
+            </li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Splenius capitis</strong>
+              <img
+                src="../muscle/prevertebral/splenius_capitis.png"
+                alt="Splenius capitis"
+              />
+            </span>
+          </td>
+          <td>
+            <li>Inferior half of nuchal ligament</li>
+            <li>Spinous processes of C7–T4</li>
+          </td>
+          <td>
+            <li>Mastoid process of temporal bone</li>
+            <li>Lateral 1/3 of superior nuchal line</li>
+          </td>
+          <td>Posterior rami of middle cervical spinal nerves</td>
+          <td>
+            <li>
+              Laterally flexes and rotates the head to the same side
+              (unilateral)
+            </li>
+            <li>Extends head and neck (bilateral).</li>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <style>
+      /* same as before */
+      .blurred {
+        filter: blur(3px);
+        transition: filter 0.3s ease;
+      }
+
+      /* Make clickable cursor for td */
+      table td:not(:first-child) {
+        cursor: pointer;
+      }
+
+      /* li inside blurred td will inherit blur from parent */
+      table td.blurred li {
+        filter: inherit;
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select all td except the first column
+        const blurCells = document.querySelectorAll(
+          'table td:not(:first-child)'
+        );
+
+        blurCells.forEach((cell) => {
+          cell.addEventListener('click', (e) => {
+            // Toggle blur on the td only
+            cell.classList.toggle('blurred');
+          });
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'z') {
+            blurCells.forEach((cell) => cell.classList.add('blurred'));
+          }
+          if (e.key === 'x') {
+            blurCells.forEach((cell) => cell.classList.remove('blurred'));
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
