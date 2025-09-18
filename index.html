@@ -374,7 +374,7 @@
         <td>
           <li>Common carotid artery</li>
           <li>External carotid artery</li>
-          <li>Internal carotid artery</li>
+          <li>Internal jugular artery</li>
           <li>Branches of the vagus nerve</li>
           <li>Hypoglossal nerves</li>
           <li>Superior branch of the ansa cervical</li>
@@ -602,12 +602,17 @@
         });
 
         // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'z') {
-            blurCells.forEach((cell) => cell.classList.add('blurred'));
-          }
-          if (e.key === 'x') {
-            blurCells.forEach((cell) => cell.classList.remove('blurred'));
+        document.addEventListener('keydown', (event) => {
+          if (event.code === 'Space') {
+            const allBlurred = Array.from(blurCells).every((cell) =>
+              cell.classList.contains('blurred')
+            );
+            if (allBlurred) {
+              blurCells.forEach((cell) => cell.classList.remove('blurred'));
+            } else {
+              blurCells.forEach((cell) => cell.classList.add('blurred'));
+            }
+            event.preventDefault(); // Prevent page scrolling
           }
         });
 
