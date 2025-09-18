@@ -63,6 +63,10 @@
     </style>
   </head>
   <body>
+    <div class="blur-buttons">
+      <button id="blurAll">Blur All</button>
+      <button id="unblurAll">Unblur All</button>
+    </div>
     <div style="text-align: center; font-size: 24px; font-weight: bold">
       Anterior Prevertebral Muscles<br /><br />
     </div>
@@ -294,6 +298,17 @@
       table td.blurred li {
         filter: inherit;
       }
+
+      .blur-buttons {
+        text-align: center;
+        margin-bottom: 16px;
+      }
+      .blur-buttons button {
+        margin: 0 5px;
+        padding: 5px 12px;
+        font-size: 16px;
+        cursor: pointer;
+      }
     </style>
 
     <script>
@@ -304,8 +319,7 @@
         );
 
         blurCells.forEach((cell) => {
-          cell.addEventListener('click', (e) => {
-            // Toggle blur on the td only
+          cell.addEventListener('click', () => {
             cell.classList.toggle('blurred');
           });
         });
@@ -318,6 +332,14 @@
           if (e.key === 'x') {
             blurCells.forEach((cell) => cell.classList.remove('blurred'));
           }
+        });
+
+        // Button functionality
+        document.getElementById('blurAll').addEventListener('click', () => {
+          blurCells.forEach((cell) => cell.classList.add('blurred'));
+        });
+        document.getElementById('unblurAll').addEventListener('click', () => {
+          blurCells.forEach((cell) => cell.classList.remove('blurred'));
         });
       });
     </script>
