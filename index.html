@@ -37,7 +37,7 @@
         position: absolute;
         bottom: 100%;
         left: 0;
-        width: 200px;
+        width: var(--tooltip-img-width, 300px); /* default 300px */
         max-width: none !important;
         max-height: none !important;
         height: auto;
@@ -46,6 +46,7 @@
         padding: 5px;
         z-index: 10;
       }
+
       .tooltip:hover img {
         display: block;
       }
@@ -408,7 +409,72 @@
     </table>
 
     <div style="text-align: center; font-size: 24px; font-weight: bold">
-      Suprahyoid Muscles<br /><br />
+      <br />Posterior Triangles<br /><br />
+    </div>
+    <table style="margin: 0 auto; width: 100%; border-collapse: collapse">
+      <thead>
+        <tr>
+          <th>Triangle</th>
+          <th>Boundaries</th>
+          <th>Contents</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="tooltip"
+              ><strong>Posterior Triangle</strong>
+              <img
+                src="./triangles/posterior_triangle.png"
+                alt="Posterior Triangle"
+              />
+            </span>
+          </td>
+          <td>
+            <li>Apex: SCM & Trapezius meet on Superior nuchal line</li>
+            <li>Posterior: Anterior border of the trapezius</li>
+            <li>Anterior: Posterior border of the SCM</li>
+            <li>Inferior: Middle 1/3 of the clavicle</li>
+            <li>
+              Roof/Superficial: Investing layer of the deep cervical fascia
+            </li>
+            <li>
+              Floor/Deep: Several prevertebral muscles covered by prevertebral
+              layer of deep cervical fascia
+            </li>
+          </td>
+          <td>
+            <strong>Floor</strong>
+            <li>Splenius capitis</li>
+            <li>Levator Scapulae</li>
+            <li>Middle Scalene</li>
+            <li>Posterior Scalene</li>
+          </td>
+        </tr>
+        <tr></tr>
+        <td>
+          <span class="tooltip"
+            ><strong>Omoclavicular/Subclavian Triangle</strong>
+            <img
+              src="./triangles/omoclavicular_triangle.png"
+              alt="Omoclavicular Triangle"
+            />
+          </span>
+        </td>
+        <td>
+          <li><strong>Posterosuperior:</strong> Inferior belly of Omohyoid</li>
+          <li><strong>Anterior:</strong> Posterior border of SCM</li>
+          <li><strong>Inferior:</strong> Middle 1/3 of clavicle</li>
+        </td>
+        <td>
+          <li>Supraclavicular Fossa</li>
+          <li>External Jugular Vein</li>
+        </td>
+      </tbody>
+    </table>
+
+    <div style="text-align: center; font-size: 24px; font-weight: bold">
+      <br />Suprahyoid Muscles<br /><br />
     </div>
 
     <table>
@@ -431,10 +497,7 @@
           </td>
           <td>Mylohyoid line of mandible</td>
           <td>Mylohyoid raphe and body of hyoid</td>
-          <td>
-            Nerve to mylohyoid, a branch of inferior alveolar nerve (from
-            mandibular nerve, CN V<sub>3</sub>)
-          </td>
+          <td>Nerve to mylohyoid (CN V<sub>3</sub>)</td>
           <td>
             Elevates hyoid, floor of mouth, and tongue during swallowing and
             speaking
@@ -449,7 +512,7 @@
           </td>
           <td>Inferior mental spine of mandible</td>
           <td>Body of hyoid</td>
-          <td>C1 via hypoglossal nerve (CN XII) and nerve to geniohyoid</td>
+          <td>C1 via hypoglossal nerve (CN XII)</td>
           <td>
             Pulls hyoid anterosuperiorly; shortens floor of mouth; widens
             pharynx
@@ -555,6 +618,93 @@
           <td>Inferior border of body and greater horn of hyoid</td>
           <td>C1 via hypoglossal nerve (CN XII) and nerve to thyrohyoid</td>
           <td>Depresses hyoid and elevates larynx</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="text-align: center; font-size: 24px; font-weight: bold">
+      Own Muscles<br /><br />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Muscle</th>
+          <th>Borders</th>
+          <th>Origin</th>
+          <th>Insertion</th>
+          <th>Innervation</th>
+          <th>Main Action(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="tooltip" style="--tooltip-img-width: 500px">
+              <strong>Sternocleidomastoid</strong>
+              <img src="./triangles/scm.png" alt="Sternocleidomastoid" />
+            </span>
+          </td>
+          <td>
+            <strong>Posterior Border of SCM:</strong>
+            <li>Anterior boundary of posterior triangle</li>
+          </td>
+          <td>
+            <li>Sternal Head: Manubrium of the sternum</li>
+            <li>
+              Clavicular Head: Superior Surface of medial 1/3 of the clavicle
+            </li>
+          </td>
+          <td>
+            <li>Superior Nuchal Line of occipital bone</li>
+            <li>Mastoid Process of Temporal bone</li>
+          </td>
+          <td>Spinal Accessory (CN XI) and C2-C3 of cervical plexus</td>
+          <td>
+            <span class="tooltip" style="--tooltip-img-width: 500px">
+              <li>Unilateral contraction</li>
+              <li>Bilateral contraction</li>
+              <li>Bilateral contraction w/ head & neck fixed</li>
+              <img src="./triangles/scmMovement.png" alt="scmMovement" />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tooltip" style="--tooltip-img-width: 400px"
+              ><strong>Trapezius</strong>
+              <img src="./triangles/trapezius.png" alt="Trapezius" />
+            </span>
+          </td>
+          <td>
+            <strong>Anterior Border of Trapezius:</strong>
+            <li>Posterior boundary of posterior triangle</li>
+          </td>
+          <td>
+            <li>Medial 1/3 of superior nuchal line</li>
+            <li>External occipital protuberance</li>
+            <li>Nuchael ligament</li>
+            <li>Spinous process of C7-T12</li>
+          </td>
+          <td>
+            <li>Lateral 1/3 of clavicle</li>
+            <li>Acromion of Scapula</li>
+            <li>Spine of Scapula</li>
+          </td>
+          <td>Spinal Accessory (CN XI) and C2-C3 of cervical plexus</td>
+          <td>
+            <strong>Superior Fibers:</strong>
+            <li>Elevates Scapula</li>
+            <li>Upward rotation of scapula</li>
+            <strong>Shoulder Fixed:</strong>
+            <li>Bilateral contraction (Extends the neck)</li>
+            <li>Unilateral Contraction (Lateral flexion to same side)</li>
+            <strong>Middle Fibers:</strong>
+            <li>Retraction of scapula</li>
+            <strong>Inferior Fibers:</strong>
+            <li>Depression of scapula</li>
+            <li>Upward rotation of scapula</li>
+          </td>
         </tr>
       </tbody>
     </table>
